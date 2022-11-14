@@ -30,7 +30,7 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
 ### Mpesa Payment with STK Push 
 
 ```php
-        $chpter= new \KiplingKelvin\ChpterPhpSdk\Chpter();
+        $chpter= new \KiplingKelvin\ChpterLaravelSdk\Chpter();
 
         $customer = array( 
             "payment_method"=> "MPesa",
@@ -64,7 +64,7 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
 ### Card Payment
 ```php
 
-        $chpter= new \KiplingKelvin\ChpterPhpSdk\Chpter();
+        $chpter= new \KiplingKelvin\ChpterLaravelSdk\Chpter();
 
         $customer = array( 
             "payment_method"=> "Card",
