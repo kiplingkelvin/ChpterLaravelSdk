@@ -3,7 +3,7 @@
 namespace KiplingKelvin\ChpterLaravelSdk;
 
 use Illuminate\Support\ServiceProvider;
-use KiplingKelvin\ChpterPhpSdk\Console\InstallChpter;
+use KiplingKelvin\ChpterLaravelSdk\Console\InstallChpter;
 
 class ChpterServiceProvider extends ServiceProvider
 {
