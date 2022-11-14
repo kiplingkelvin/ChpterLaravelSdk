@@ -1,4 +1,12 @@
-# Chpter API PHP Integration
+# Chpter Laravel SDK
+
+![Scrutinizer build (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/build/g/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
+![Packagist Version](https://img.shields.io/packagist/v/kiplingkelvin/chpter-laravel-sdk?style=flat-square)
+![Packagist Downloads](https://img.shields.io/packagist/dt/kiplingkelvin/chpter-laravel-sdk?style=flat-square)
+![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
+![GitHub](https://img.shields.io/github/license/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
+
 
 ## Installation
 Install via composer
@@ -6,7 +14,7 @@ Install via composer
 composer require kiplingkelvin/chpter-laravel-sdk
 ```
    
-Run vendor:publish command
+Run vendor:publish command inside your laravel project
 
 ```bash
 php artisan vendor:publish --provider="KiplingKelvin\ChpterLaravelSdk\ChpterServiceProvider"
@@ -104,3 +112,13 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
         return $response;
 
 ```
+## Resources
+
+- [Laravel Chpter Implementation Sample Project](https://github.com/kiplingkelvin/chpter-laravel-sample)
+
+## Author
+
+[@kiplingkelvin](https://www.github.com/kiplingkelvin)
+
+
+
