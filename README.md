@@ -6,10 +6,9 @@ Install via composer
 composer require kiplingkelvin/chpter-laravel-sdk
 ```
    
-Run php artisan chpter:installcommand
+Run vendor:publish command
 
 ```bash
-php artisan chpter:install
 php artisan vendor:publish --provider="KiplingKelvin\ChpterLaravelSdk\ChpterServiceProvider"
 ```
 After publishing you will find config/chpter.php config file. You can now adjust the configurations appropriately. Additionally, add the configurations to your env for security purposes.
@@ -27,6 +26,7 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
 ```
 
 ## Usage
+## Payments
 ### Mpesa Payment with STK Push 
 
 ```php
