@@ -2,12 +2,12 @@
 
 # Chpter Laravel SDK
 
-![Scrutinizer build (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/build/g/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
-![Packagist Version](https://img.shields.io/packagist/v/kiplingkelvin/chpter-laravel-sdk?style=flat-square)
-![Packagist Downloads](https://img.shields.io/packagist/dt/kiplingkelvin/chpter-laravel-sdk?style=flat-square)
-![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
-![GitHub](https://img.shields.io/github/license/kiplingkelvin/ChpterLaravelSdk?style=flat-square)
+[![Scrutinizer build (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/build/g/kiplingkelvin/ChpterLaravelSdk?style=flat-square)](https://scrutinizer-ci.com/g/kiplingkelvin/ChpterLaravelSdk/)
+[![Packagist Version](https://img.shields.io/packagist/v/kiplingkelvin/chpter-laravel-sdk?style=flat-square)](https://packagist.org/packages/kiplingkelvin/chpter-laravel-sdk)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/kiplingkelvin/chpter-laravel-sdk?style=flat-square)](https://packagist.org/packages/kiplingkelvin/chpter-laravel-sdk)
+[![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/kiplingkelvin/ChpterLaravelSdk?style=flat-square)](https://scrutinizer-ci.com/g/kiplingkelvin/ChpterLaravelSdk/)
+[![GitHub issues](https://img.shields.io/github/issues/kiplingkelvin/ChpterLaravelSdk?style=flat-square)](https://github.com/kiplingkelvin/ChpterLaravelSdk)
+[![GitHub](https://img.shields.io/github/license/kiplingkelvin/ChpterLaravelSdk?style=flat-square)](https://github.dev/kiplingkelvin/ChpterLaravelSdk)
 
 
 ## Installation
