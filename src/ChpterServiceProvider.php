@@ -43,5 +43,10 @@ class ChpterServiceProvider extends ServiceProvider
         $this->app->singleton(Chpter::class, function () {
             return new Chpter();
         });
+
+
+        $this->app->singleton(ChpterPayouts::class, function () {
+            return new ChpterPayouts();
+        });
     }
 }
