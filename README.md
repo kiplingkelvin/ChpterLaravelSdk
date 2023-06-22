@@ -109,7 +109,7 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
         return $response;
 
 ```
-
+## Payouts
 ### Creating Mobile Payout Destination
 ```php
 
