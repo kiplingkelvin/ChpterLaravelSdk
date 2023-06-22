@@ -150,7 +150,7 @@ class Chpter
         }
     }
 
-    public static function createMobilePayoutDestination($type, $phone_number)
+    public function createMobilePayoutDestination($type, $phone_number)
     {
         $client  = new Client();
 
@@ -173,7 +173,7 @@ class Chpter
             return json_decode((string) $exception->getResponse()->getBody()->getContents(), true);
         }
     }
-    public static function createBankPayoutDestination($bank_name, $bank_account_name, $bank_account_number)
+    public function createBankPayoutDestination($bank_name, $bank_account_name, $bank_account_number)
     {
         $client  = new Client();
 
