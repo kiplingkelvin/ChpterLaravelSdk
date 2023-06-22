@@ -113,7 +113,7 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
 ### Creating Mobile Payout Destination
 ```php
 
-        $chpter= new \KiplingKelvin\ChpterLaravelSdk\ChpterPayouts();
+        $chpter= new \KiplingKelvin\ChpterLaravelSdk\Chpter();
 
         $type = "Mpesa";
         $phoneNumber = "254700000000";
@@ -129,7 +129,7 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
 ### Creating Bank Payout Destination
 ```php
 
-        $chpter= new \KiplingKelvin\ChpterLaravelSdk\ChpterPayouts();
+        $chpter= new \KiplingKelvin\ChpterLaravelSdk\Chpter();
 
         $bankName = "KCB";
         $bankAccountName = "ALBERT CHELA";

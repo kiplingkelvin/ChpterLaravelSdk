@@ -14,6 +14,12 @@ class Chpter
     public $chpter_accounts_token_renewal_url;
     public $token;
     public $domain;
+
+
+    public $mobile_payout_destination_url;
+    public $bank_payout_destination_url;
+    public $mobile_payout_url;
+    public $bank_payout_url;
   
     /**
      * Construct method
@@ -32,10 +38,13 @@ class Chpter
         //Base URL for the API endpoints. This is basically the 'common' part of the API endpoints
          $this->chpter_payment_url = config('chpter.payment_url'); 	
          $this->chpter_hosted_redirect_payment_url = config('chpter.hosted_redirect_payment_url'); 
-         $this->chpter_express_redirect_payment_url = config('chpter.express_redirect_payment_url'); 	
-
+         $this->chpter_express_redirect_payment_url = config('chpter.express_redirect_payment_url'); 
          $this->chpter_accounts_token_renewal_url = config('chpter.accounts_token_renewal_url'); 
 
+         $this->mobile_payout_destination_url = config('chpter.mobile_payout_destination_url'); 	
+         $this->bank_payout_destination_url = config('chpter.bank_payout_destination_url'); 
+         $this->mobile_payout_url = config('chpter.mobile_payout_url'); 
+         $this->bank_payout_url = config('chpter.bank_payout_url'); 
 
          $this->token = config('chpter.chpter_token'); 
          $this->domain =config('chpter.domain');
@@ -133,6 +142,54 @@ class Chpter
                     "domain"  => $this->domain,
                 ],
                 "json"    => null,
+            ]);
+
+            return json_decode((string) $response->getBody(), true);
+        } catch (BadResponseException $exception) {
+            return json_decode((string) $exception->getResponse()->getBody()->getContents(), true);
+        }
+    }
+
+    public static function createMobilePayoutDestination($type, $phone_number)
+    {
+        $client  = new Client();
+
+        $requestBody = array( 
+            "type"=> $type,
+            "phone_number"=> $phone_number
+        );
+
+        try {
+            $response = $client->post($this->mobile_payout_destination_url, [
+                "headers" => [
+                    "Authorization" => "Token {$this->token}",
+                    "domain"  => $this->domain,
+                ],
+                "json"    => $requestBody,
+            ]);
+
+            return json_decode((string) $response->getBody(), true);
+        } catch (BadResponseException $exception) {
+            return json_decode((string) $exception->getResponse()->getBody()->getContents(), true);
+        }
+    }
+    public static function createBankPayoutDestination($bank_name, $bank_account_name, $bank_account_number)
+    {
+        $client  = new Client();
+
+        $requestBody = array( 
+            "bank_name"=> $bank_name,
+            "bank_account_name"=> $bank_account_name,
+            "bank_account_number"=> $bank_account_number,
+        );
+
+        try {
+            $response = $client->post($this->bank_payout_destination_url, [
+                "headers" => [
+                    "Authorization" => "Token {$this->token}",
+                    "domain"  => $this->domain,
+                ],
+                "json"    => $requestBody,
             ]);
 
             return json_decode((string) $response->getBody(), true);
