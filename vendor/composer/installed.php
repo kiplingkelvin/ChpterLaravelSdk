@@ -3,7 +3,7 @@
         'name' => 'kiplingkelvin/chpter-laravel-sdk',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '83b4fe02bda900ca436efa3336d5183d62976f2c',
+        'reference' => '3991399d2f1a1a778263321565ae974f4b8dac7f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -40,7 +40,7 @@
         'kiplingkelvin/chpter-laravel-sdk' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '83b4fe02bda900ca436efa3336d5183d62976f2c',
+            'reference' => '3991399d2f1a1a778263321565ae974f4b8dac7f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

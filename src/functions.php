@@ -24,10 +24,10 @@ function chpter_express_redirect_payment($transaction_data, $redirect_urls)
 }
 function chpter_mobile_payout_destination($type, $phone_number)
 {
-    return Kipling\ChpterPhpSdk\Payouts::createMobilePayoutDestination($type, $phone_number);
+    return Kipling\ChpterPhpSdk\ChpterPayouts::createMobilePayoutDestination($type, $phone_number);
 }
 
 function chpter_bank_payout_destination($bank_name, $bank_account_name, $bank_account_number)
 {
-    return Kipling\ChpterPhpSdk\Payouts::createBankPayoutDestination($bank_name, $bank_account_name, $bank_account_number);
+    return Kipling\ChpterPhpSdk\ChpterPayouts::createBankPayoutDestination($bank_name, $bank_account_name, $bank_account_number);
 }

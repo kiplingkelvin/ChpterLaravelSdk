@@ -5,7 +5,7 @@ namespace KiplingKelvin\ChpterLaravelSdk;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
 
-class Payouts
+class ChpterPayouts
 {
     public $mobile_payout_destination_url;
     public $bank_payout_destination_url;
