@@ -20,7 +20,16 @@ return [
     |------------------------------------------
     */
     'accounts_token_renewal_url' => 'https://chpter.co/api/accounts/renew_merchant_token/',
-   
+
+    /*-----------------------------------------
+    |Chpter payout URLs
+    |------------------------------------------
+    */
+    'mobile_payout_destination_url' => 'https://chpter.co/api/payout/payout-mobile-destination',
+    'bank_payout_destination_url' => 'https://chpter.co/api/payout/payout-bank-destination',
+
+    'mobile_payout_url' => 'https://chpter.co/api/payout/payout-mobile-destination',
+    'bank_payout_url' => 'https://chpter.co/api/payout/payout-bank-destination',
 
     /*-----------------------------------------
     |Your Domain Registered Under Chpter

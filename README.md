@@ -109,6 +109,40 @@ CHPTER_TOKEN=chpter_pk_2b4037c1c8
         return $response;
 
 ```
+
+### Creating Mobile Payout Destination
+```php
+
+        $chpter= new \KiplingKelvin\ChpterLaravelSdk\Chpter();
+
+        $type = "Mpesa"
+        $phoneNumber = "254700000000"
+        
+        Log::info('********Starting Api Request**********');
+        $response = $chpter->createMobilePayoutDestination($type, $phoneNumber);
+        //The response is in json
+        Log::alert('Chpter API Response');
+        return $response;
+
+```
+
+### Creating Bank Payout Destination
+```php
+
+        $chpter= new \KiplingKelvin\ChpterLaravelSdk\Chpter();
+
+        $bankName = "KCB"
+        $bankAccountName = "ALBERT CHELA"
+        $bankAccountNumber = "123451267"
+        
+        Log::info('********Starting Api Request**********');
+        $response = $chpter->createBankPayoutDestination($bankName, $bankAccountName, $bankAccountNumber);
+        //The response is in json
+        Log::alert('Chpter API Response');
+        return $response;
+
+```
+
 ## Resources
 
 - [Laravel Chpter Implementation Sample Project](https://github.com/kiplingkelvin/chpter-laravel-sample)
